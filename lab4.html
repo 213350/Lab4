@@ -1,0 +1,62 @@
+<html>
+<head>
+<title> Lab 4 </title>
+<script src="processing.js"></script>
+<script type="text/processing" data-processing-target="mycanvas">
+
+PImage bike1;
+PImage bike2;
+PImage bike3;
+
+void setup(){
+
+size( 500,500 );
+background(0,0,0);
+frameRate( 30 );
+
+bike1 = loadImage("images/harley davidson.jpg");
+bike2 = loadImage("images/KTM.jpg");
+bike3 = loadImage("images/BULLET.jpg");
+
+
+}
+void draw()
+{
+
+image(bike1,100,0,300,150);
+image(bike2,100,150,300,150);
+image(bike3,100,300,300,150);
+
+stroke(255,255,255);
+fill(255,0,0);
+rect(0,455,500,500);
+
+stroke(255,255,255);
+fill(255,0,0);
+rect(0,0,95,500);
+
+stroke(255,255,255);
+fill(255,0,0);
+rect(405,0,95,500);
+
+stroke(255,255,255);
+fill(0,255,0);
+rect(75,75,15,10);
+
+stroke(255,255,255);
+fill(0,255,0);
+rect(75,225,15,10);
+
+stroke(255,255,255);
+fill(0,255,0);
+rect(75,375,15,10);
+}
+
+</script>
+<canvas id="mycanvas"></canvas>
+</head>
+
+<body>
+
+</body>
+</html>
